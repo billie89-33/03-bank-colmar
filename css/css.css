@@ -85,7 +85,62 @@ body{
 
 /*-----------main------------*/
 
+.hero{
+    display: flex;
+    background-color: #E0E0E0;
+    padding: 24px;
+    gap: 24px;
+    
+}
 
+.herocontainer {
+    display: flex;
+    padding: 0;
+    width: 60%;
+    
+    
+}
+
+img{
+   width: 100%;
+}
+
+.herobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 28px;
+    gap: 32px;
+    
+    
+    
+     
+}
+
+h1{
+    line-height: 1.1;      /* ระยะบรรทัดชิดๆ */
+    letter-spacing: -1px;  /* บีบตัวอักษร */
+    
+
+    
+}
+
+/*This p*/
+.heroitem{
+    margin-top: 0;
+}
+
+.heroitem1{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: whitesmoke;
+    text-align: center;
+    
+    
+    
+
+}
+  
 
 
 
@@ -125,7 +180,15 @@ body{
    }
 
 /*-----------main------------*/
+   .hero{
+    display: flex;
+    flex-direction: column;
+   }
 
+   .herocontainer{
+    display: flex;
+    width: 100%;
+   }
 
 
 }
