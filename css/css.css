@@ -1,0 +1,62 @@
+*{
+    font: 1em sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ 
+ .menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px ;
+    font-size: 32px;
+    height: 64px;
+    
+    background-color: aquamarine;  /*อบ่าลืมลบ*/
+}
+
+.spanname{
+    font-weight: bold;
+}
+
+.spanlogo{
+    color: grey;
+    font-size: ;
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+.menu-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;   /*เอา จุดๆออก*/
+    
+    gap: 16px;
+    
+    
+}
+
+.menu-right li a{
+   text-decoration: none;
+   color: black;
+   font-size: 28px;
+}
+
+.menu-right li a:hover{
+   text-decoration: none;
+   color: rgba(22, 62, 172, 0.911);
+}
+
+
+
+/*-----------ส่วน-main------------*/
