@@ -18,18 +18,9 @@ body{
 }
 
 
- .imglogo{
-   width: 40px;
-}
-
-.imglogo1{
-   width: 40px;
-   display: none;
-   
-   
-}
-
  
+
+ /*nav*/
  .menu{
     display: flex;
     justify-content: space-between;
@@ -50,15 +41,31 @@ body{
 }
 
 
-
+/*ตัวครอบฝั่งซ้าย*/
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    
 
 
+/*icon หลัก*/
+.imglogo{
+   width: 40px;
+}
+
+
+/*icon รอง ที่หายไปจอใหญ่*/
+.imglogo1{
+   width: 40px;
+   display: none;
+   
+   
+}
+
+
+
+/*ตัวครอบฝัั่งขวา*/
 .menu-right{
     display: flex;
     justify-content: center;
@@ -70,8 +77,10 @@ body{
     
 }
 
+
+/*ชื่อตัวทางขวาทั้งหมด*/
 .menu-right li a{
-   text-decoration: none;
+   text-decoration: none;  /*เอาเส้นออก*/
    color: black;
    font-size: 28px;
 }
@@ -85,6 +94,9 @@ body{
 
 /*-----------main------------*/
 
+
+
+/*section hero*/
 .hero{
     display: flex;
     background-color: #E0E0E0;
@@ -110,6 +122,7 @@ img{
     flex-direction: column;
     justify-content: center;
     font-size: 28px;
+    margin: 0 ; 
     gap: 32px;
     
     
@@ -118,9 +131,10 @@ img{
 }
 
 h1{
+    display: flex;
     line-height: 1.1;      /* ระยะบรรทัดชิดๆ */
     letter-spacing: -1px;  /* บีบตัวอักษร */
-    
+    margin: 0 !important; 
 
     
 }
@@ -140,7 +154,176 @@ h1{
     
 
 }
+
+
+
+/*sction information*/
   
+
+/*ครอปใหญ่สุด*/
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #E0E0E0;
+    
+}
+
+
+/*ครอปกล่อง ซ้ายขวา*/
+.main-container {
+    display: flex;
+    margin: 0 ;
+    
+}
+
+
+
+/* --- ฝั่งซ้าย (ทั้งหมด) --- */
+.content-left {
+    
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 32px 24px;
+    gap: 32px;
+}
+
+
+
+.text-group{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+
+/* fonts */
+.content-left h2  {
+    font-size: 40px;
+    margin: 0;
+    
+    
+}
+
+.content-left .quote {
+    margin: 0; /* ระยะห่างใต้เนื้อหา 32px */
+    color: #666;
+    line-height: 1.6;
+}
+
+.content-left .author {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* --- ฝั่งขวา (List Content) --- */
+.content-right {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    
+    width: 40%;
+}
+
+
+/* fonts */
+ .list-text h3,
+ .list-text h4,
+ .list-text h5{
+      font-size: 40px; 
+      margin: 0;   
+}
+
+
+.text-p{
+    margin: 0 0 32px 0; /* ระยะห่างใต้เนื้อหา 32px */
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*กล่องขวา ชื่อเดียวกันหมด*/
+.list-item {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+    width: 100%;
+    
+}
+
+
+/*ที่ครอปเฉพาะรูป*/
+.list-img{
+    display: flex;
+    
+    width: 35%;
+
+}
+
+.list-img .img1{
+    width: 100%;       /* ให้รูปกว้างเต็ม  */
+    height: auto;       /* ให้รูปสูงเต็ม */
+    object-fit: cover;  /* สำคัญ! เพื่อไม่ให้รูปเบี้ยวเวลาขยายเต็มกรอบ */
+    display: block;     /* ลบช่องว่างใต้รูป */
+}
+
+
+.list-text{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 16px;
+    align-items: start;
+    color: black;
+    width: 65%;
+    gap: 8px;
+    
+    
+    
+    
+}
+
+.list-text a {
+    display: flex;
+    
+    
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* สไตล์เฉพาะสำหรับตัวที่ 3 (Highlight) */
+.list-item.highlight {
+    background-color: #f5f5f5; /* สีพื้นหลังเทาอ่อน */
+    
+     /* ดึงกลับเพื่อให้ระยะห่างเท่าเดิมแต่มีสีพื้นหลัง */
+    border-radius: 4px;
+}
+
+
+/*ขนาดdiv ส่วนฝั่งขวา รูปทั้งหมด*/
+.list-img img {
+    width: 120px; /* ปรับขนาดรูปเล็กตามต้องการ */
+    height: 80px;
+    object-fit: cover;
+}
+
+
+
+
 
 
 
@@ -175,21 +358,60 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
    }
 
+
+   
 /*-----------main------------*/
-   .hero{
+
+
+/*section hero*/
+  .hero {
     display: flex;
     flex-direction: column;
-   }
+    gap: 32px;
+    
+    
+    
+}
 
-   .herocontainer{
+.herocontainer {
     display: flex;
     width: 100%;
-   }
+    
+}
+
+ .herobox {
+        padding: 16px;
+    }
+
+    .herobox button, .herobox .eroitem1 {
+    /* สั่งให้ขยับขึ้นไป 8px เพื่อให้ระยะห่างจริงเหลือ 24px (32 - 8 = 24) */
+    margin-top: -8px !important; 
+}
+    
+  /*sction information*/
+.content-left{
+    display: none;
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 16px 32px 16px;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-img{
+    width: 100%;
+    height: 300px;
+}
+
 
 
 }
-
