@@ -729,9 +729,13 @@ footer {
 .COURSES{
     display: flex;
     flex-direction: column;
-    width: 83%;
+    
     background-color: white;
     padding: 32px 32px !important;
+    width: 100%;           /* เต็มความกว้างหน้าจอ */
+    max-width: 100%;       /* ห้ามเกินหน้าจอ */
+    padding: 16px;         /* ระยะห่างจากขอบจอ */
+ box-sizing: border-box;
     
    
 }
