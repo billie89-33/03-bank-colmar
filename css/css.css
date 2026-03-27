@@ -17,10 +17,51 @@ body{
     padding: 0;
 }
 
+.my-name{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 40px;
+   
+    margin: 0;
+    padding: 0;
+    
+}
 
- 
 
- /*nav*/
+
+@keyframes luxury-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.expensive-rainbow {
+  /* ใช้โทนสีรุ้งแบบมุก/ทองคำขาว (Rose Gold, Champagne, Soft Blue, Pale Violet) */
+  background: linear-gradient(
+    to right, 
+    #eecda3, #ef629f, #8e44ad, #3498db, #27ae60, #eecda3
+  );
+  background-size: 300% auto;
+  
+  /* ทำให้สีอยู่ในตัวอักษร */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* อนิเมชั่นช้าๆ (10-15 วินาที) จะดูแพงกว่า */
+  animation: luxury-glow 10s ease-in-out infinite;
+  
+  /* ตกแต่งเพิ่มเติม */
+  
+  font-size: 50px;
+  font-family: 'jsd12; 
+  
+  
+}
+
+
+ /*-----------nav------------------*/
  .menu{
     display: flex;
     justify-content: space-between;
@@ -100,7 +141,7 @@ body{
 .hero{
     display: flex;
     background-color: #E0E0E0;
-    padding: 24px;
+    padding: 32px 24px;
     gap: 24px;
     
 }
@@ -145,10 +186,12 @@ h1{
 }
 
 .heroitem1{
-    padding: 8px;
+    padding: 8px 0;
     background-color: rgba(0, 0, 0, 0.548);
     color: whitesmoke;
     text-align: center;
+    margin: 0;
+    
     
     
     
@@ -336,6 +379,7 @@ h1{
 .name-p{
     font-weight: 800;
     font-size: 40px;
+    margin: 0;
    
 }
 
@@ -358,11 +402,13 @@ h1{
   gap: 32px;         /* ระยะห่างระหว่างกล่อง (Gutter) 32px ทั้งแนวตั้ง/นอน */
   justify-content: center;
   margin: 0;
-  padding: 0;
-  
-
+  width: 100%;
   
 }
+
+
+
+
 
 /* ตัว Card (3 กล่องต่อแถว) */
 .card {
@@ -370,6 +416,7 @@ h1{
   width: 31%; /* กำหนดความกว้างประมาณ 1 ใน 3 ของหน้าจอ */
   display: flex;
   flex-direction: column;
+  
   
   
   
@@ -391,8 +438,8 @@ h1{
   flex-direction: column;
   align-items: stretch;
   gap: 8px;
-  padding-bottom: 24px;
   
+  padding: 16px 16px 24px 16px;
           
 }
 
@@ -508,38 +555,47 @@ h1{
 }
 
 
-/*    */
+/* -------------section COURSES --------   */
 .main-title{
     font-weight: bold;
     font-size: 45px;
     margin-bottom: 16px !important;
 }
 .COURSES{
+    display: flex;
+    flex-direction: column;
+    
     background-color: white;
+    padding: 32px 32px;
+    
    
 }
 
 .flex-container{
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 8px !important; 
+    width: 0 !important;
     
 }
 
 .card{
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    justify-content: center;
+    align-items: start;
+    width: 450px;
     padding: 16px 16px 24px 16px;
     background-color: #E0E0E0;
-    height: 100px;
+    height: 100%;
     margin: 0;
     
 }
 
 .card-content{
-    padding: 0;
+    padding: 0 !important;
+    
 }
  
 .card-content p:not(.name-p) {
@@ -548,6 +604,8 @@ h1{
 
   .name-p{
     margin: 0;
+    display: flex;
+    
   }
 
  .card-image {
