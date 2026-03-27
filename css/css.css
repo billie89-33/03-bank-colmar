@@ -430,6 +430,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 !important;
    }
 
 
@@ -442,6 +443,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding: 0 !important;
     
     
     
@@ -454,7 +456,7 @@ h1{
 }
 
  .herobox {
-        padding: 16px;
+        padding: 0 16px 32px 16px;
     }
 
     .herobox button, .herobox .eroitem1 {
@@ -487,6 +489,7 @@ h1{
 .list-item{
     display: flex;
     flex-direction: column;
+    padding: 0 !important;
     
 }
 
@@ -505,9 +508,54 @@ h1{
 }
 
 
+/*    */
+.main-title{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 16px !important;
+}
+.COURSES{
+    background-color: white;
+   
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important; 
+    
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 16px 24px 16px;
+    background-color: #E0E0E0;
+    height: 100px;
+    margin: 0;
+    
+}
+
+.card-content{
+    padding: 0;
+}
+ 
+.card-content p:not(.name-p) {
+    display: none;
+  }
+
+  .name-p{
+    margin: 0;
+  }
+
+ .card-image {
+    display: none;
+  }
        
+ .label{
+    display: none;
+ }
 
-
-
+}
