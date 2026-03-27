@@ -777,6 +777,7 @@ footer {
   .name-p{
     margin: 0;
     display: flex;
+    flex-shrink: 0;
     
   }
 
