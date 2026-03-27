@@ -640,6 +640,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 !important;
+    max-width: 100%;
    }
 
 
@@ -653,6 +654,7 @@ footer {
     flex-direction: column;
     gap: 32px;
     padding: 0 !important;
+    max-width: 100%;
     
     
     
@@ -676,6 +678,7 @@ footer {
   /*----sction information -------------*/
 
 .information{
+    max-width: 100%;
     padding:  16px 16px 32px 16px;
 }
 
