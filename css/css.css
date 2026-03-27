@@ -444,8 +444,136 @@ h1{
 }
 
 
+/*   ----------------- section thisis------------------------------------*/
 
 
+/* --- คอนเทนเนอร์หลัก --- */
+
+.thesis{
+    padding: 32px 24px;
+}
+
+
+.thesis-container {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-top: 32px;
+
+}
+
+/* 2. ฝั่งซ้าย (60%) */
+.main-content {
+  width: 60%;           
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+
+
+.video-placeholder {
+  width: 100%;
+  
+}
+
+.video-placeholder video {
+  width: 100%;      /* บังคับให้กว้างเท่ากับกรอบ 60% */
+  height: auto;     /* ปรับความสูงตามอัตราส่วน */
+  display: block;
+}
+
+/* --- ฝั่งขวา: รายการย่อย (40%) --- */
+.side-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+/* รายการย่อยแต่ละอัน */
+.side-item {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #acacac6e;
+  
+}
+
+.side-item1 {
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 16px;
+  
+}
+
+
+
+/* 1. คอนเทนเนอร์รูปภาพ (35%) */
+.side-img-box {
+  
+  width: 35%;      /* ล็อกขนาดรูปไว้ที่ 35% ไม่ให้ขยายเกินนี้ */
+  min-width: 0; 
+}
+
+.side-img-box .img3{
+    width: 100%;
+}
+
+
+
+
+
+/* 2. คอนเทนเนอร์ข้อความ (65%) */
+.side-text {
+    flex: 1;
+  
+  
+  
+}
+
+
+
+
+/* ---  <p> --- */
+.thesis-title {
+  margin: 0;
+  padding: 0;
+  display: block; 
+  font-size: 50px;
+   text-align: center;
+}
+
+/*ฝั่งซ้าย*/
+.main-heading{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.description{
+    font-size: 26px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+
+/* p ฝั่งขวา */
+
+.side-title{
+    font-size: 28px;
+}
+
+.side-sub{
+    font-size: 24px;
+    color: #666;
+}
 
 
 
