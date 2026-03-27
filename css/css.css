@@ -754,10 +754,10 @@ footer {
 
 .card{
     display: flex;
-    width: 100%;
+    width: 390px;
     justify-content: center;
     align-items: start;
-    width: 450px;
+    
     padding: 16px 16px 24px 16px;
     background-color: #E0E0E0;
     height: 100%;
@@ -767,6 +767,8 @@ footer {
 
 .card-content{
     padding: 0 !important;
+    display: flex;
+    flex-wrap: nowrap;
     
 }
  
@@ -778,6 +780,7 @@ footer {
     margin: 0;
     display: flex;
     flex-shrink: 0;
+    font-size: 28px;
     
   }
 
