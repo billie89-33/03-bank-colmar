@@ -575,8 +575,42 @@ h1{
     color: #666;
 }
 
+/*---------footer-------------------*/
+footer {
+  /* จัดวางซ้าย-ขวา */
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start; 
+  height: 70px;           
+  
+  
+  border-top: 1px solid #d1d1d1; 
+  
+  
+  padding: 16px 24px;   /* บน-ล่าง 16px, ซ้าย-ขวา 24px */
+       
+  
+  /* 4. ตกแต่งตัวอักษรให้ดูแพง */
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #666;
+}
 
+/* ล้างค่าเริ่มต้นของ p ใน footer */
+.footer-left p {
+  margin: 0;
+}
 
+/* จัดการลิงก์ฝั่งขวา */
+.footer-right a {
+  text-decoration: none; /* เอาเส้นใต้ตัวอักษรออก */
+  color: inherit;        /* ใช้สีเดียวกับตัวอักษรหลัก */
+  margin-left: 16px;     /* ระยะห่างระหว่าง Terms กับ Privacy */
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* ให้มีเส้นใต้เวลาเอาเมาส์ชี้ */
+}
 
 
 @media (max-width: 678px) {
@@ -695,7 +729,7 @@ h1{
 .COURSES{
     display: flex;
     flex-direction: column;
-    
+    width: 83%;
     background-color: white;
     padding: 32px 32px !important;
     
@@ -746,5 +780,52 @@ h1{
  .label{
     display: none;
  }
+
+
+/*-----------scetion thisis------------------*/
+
+/* 1. ซ่อนเนื้อหาอื่นๆ ทั้งหมดใน .thesis ยกเว้นหัวข้อและวิดีโอ */
+.thesis p:not(.thesis-title), 
+.main-info, 
+.side-content {
+  display: none;
+}
+
+.thesis-container{
+    margin: 0;
+}
+
+.thesis{
+    padding: 32px 0 24px ;
+}
+
+/* 2. จัดระเบียบหัวข้อ (Thesis exhibits) */
+.thesis-title {
+  display: block; /* มั่นใจว่าแสดงผลแน่นอน */
+  margin-top: 32px;    /* ระยะห่างด้านบนตามรูป */
+  margin-bottom: 16px; /* ระยะห่างด้านล่างตามรูป */
+  text-align: center;
+}
+
+/* 3. คุมวิดีโอให้พอดีกรอบ ไม่ล้น */
+.main-content {
+  flex: 1; /* ขยายเต็มพื้นที่ที่เหลือ */
+  width: 100%;
+  
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* ----------footer---------------*/
+
+
+
+
 
 }
