@@ -825,7 +825,15 @@ video {
 /* ----------footer---------------*/
 
 
+.footer-right{
+    display: none;
+}
 
+footer, .footer-container {
+    
+    height: 20px;
+
+}
 
 
 }
