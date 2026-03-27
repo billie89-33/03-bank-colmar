@@ -729,19 +729,14 @@ footer {
     font-size: 28px;
     margin-bottom: 16px !important;
 }
-.COURSES{
+.COURSES {
     display: flex;
     flex-direction: column;
-    
-    background-color: white;
-    padding: 32px 32px !important;
-    width: 100%;           /* เต็มความกว้างหน้าจอ */
-    max-width: 100%;       /* ห้ามเกินหน้าจอ */
-    padding: 16px;         /* ระยะห่างจากขอบจอ */
- box-sizing: border-box;
-    
-   
+    padding: 32px 16px; /* 32px คือระยะห่างจากขอบบน (ตามรูป) และ 16px คือระยะขอบซ้าย-ขวา */
+    background-color: #F1F1F1; /* สีพื้นหลังเทาอ่อนตามรูป */
 }
+
+
 
 .flex-container{
     display: flex;
@@ -753,8 +748,8 @@ footer {
 }
 
 .card{
-    display: flex;
-    width: 390px;
+    
+    width: 400px;
     justify-content: center;
     align-items: start;
     
@@ -762,6 +757,8 @@ footer {
     background-color: #E0E0E0;
     height: 100%;
     margin: 0;
+    
+
     
 }
 
