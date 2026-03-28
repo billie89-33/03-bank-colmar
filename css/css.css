@@ -351,7 +351,7 @@ h1{
 
 /* สไตล์เฉพาะสำหรับตัวที่ 3 (Highlight) */
 .list-item.highlight {
-    background-color: #f5f5f5; /* สีพื้นหลังเทาอ่อน */
+    background-color: #cfcbcb8f; /* สีพื้นหลังเทาอ่อน */
     
      /* ดึงกลับเพื่อให้ระยะห่างเท่าเดิมแต่มีสีพื้นหลัง */
     border-radius: 4px;
@@ -733,8 +733,8 @@ footer {
 .COURSES {
     display: flex;
     flex-direction: column;
-    padding: 32px 16px; /* 32px คือระยะห่างจากขอบบน (ตามรูป) และ 16px คือระยะขอบซ้าย-ขวา */
-    background-color: #F1F1F1; /* สีพื้นหลังเทาอ่อนตามรูป */
+    padding: 32px 16px; 
+    background-color: #F1F1F1; 
 }
 
 
