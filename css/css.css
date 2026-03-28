@@ -177,6 +177,7 @@ h1{
     line-height: 1.1;      /* ระยะบรรทัดชิดๆ */
     letter-spacing: -1px;  /* บีบตัวอักษร */
     margin: 0 !important; 
+    font-size: 28px;
 
     
 }
@@ -184,6 +185,8 @@ h1{
 /*This p*/
 .heroitem{
     margin-top: 0;
+    font-size: 20px;
+    color: #747171;
 }
 
 .heroitem1{
@@ -246,7 +249,7 @@ h1{
 
 /* fonts */
 .content-left h2  {
-    font-size: 40px;
+    font-size: 32px;
     margin: 0;
     
     
@@ -284,7 +287,7 @@ h1{
  .list-text h3,
  .list-text h4,
  .list-text h5{
-      font-size: 40px; 
+      font-size: 26px; 
       margin: 0;   
 }
 
