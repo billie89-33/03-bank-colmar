@@ -659,11 +659,12 @@ footer {
     flex-direction: column;
     gap: 32px;
     padding: 0 !important;
-    max-width: 100%;
-    
-    
+    max-width: 100%; 
     
 }
+
+
+
 
 .herocontainer {
     display: flex;
@@ -688,7 +689,9 @@ footer {
 }
 
 
-
+.list-item.highlight{
+    background-color: transparent !important;
+}
 
 .content-left{
     display: none;
@@ -870,5 +873,4 @@ footer, .footer-container {
 }
 
 
-}
 }
