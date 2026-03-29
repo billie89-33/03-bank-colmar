@@ -734,13 +734,14 @@ footer {
     font-size: 26px;
     margin-bottom: 16px !important;
 }
+
 .COURSES {
     display: flex;
     flex-direction: column;
     padding: 32px  16px!important; 
     background-color: #F1F1F1; 
     
-
+}
 
 
 .flex-container{
@@ -806,26 +807,37 @@ footer {
 
 /*-----------scetion thisis------------------*/
 
+
 /* 1. ซ่อนเนื้อหาอื่นๆ ทั้งหมดใน .thesis ยกเว้นหัวข้อและวิดีโอ */
 .thesis p:not(.thesis-title), 
 .main-info, 
 .side-content {
-  display: none;
+  display: none ;
 }
 
-.thesis-container{
+
+
+
+.thesis-container {
+    display: block; /* หรือ flex ตามความเหมาะสม */
+    width: 100%;
     margin: 0;
 }
 
+
+
+
 .thesis{
     padding: 32px 0 24px ;
+    display: flex;
+    flex-direction: column;
 }
 
 /* 2. จัดระเบียบหัวข้อ (Thesis exhibits) */
 .thesis-title {
   display: block; /* มั่นใจว่าแสดงผลแน่นอน */
-  margin-top: 32px;    /* ระยะห่างด้านบนตามรูป */
-  margin-bottom: 16px; /* ระยะห่างด้านล่างตามรูป */
+    
+  margin-bottom: 16px; 
   text-align: center;
 }
 
